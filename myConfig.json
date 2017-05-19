@@ -1,0 +1,27 @@
+[
+  {
+    "Classification": "spark",
+    "Properties": {
+      "maximizeResourceAllocation": "true"
+    }
+  },
+  {
+    "Classification": "spark-defaults",
+    "Properties": {
+      "spark.executor.memory": "12288M",
+      "spark.driver.memory": "12288M",
+      "spark.driver.cores": "3",
+      "spark.executor.cores": "3",
+      "spark.executor.instances": "4",
+      "spark.yarn.executor.memoryOverhead": "4096",
+      "spark.yarn.executor.memoryOverhead": "4096",
+      "spark.default.parallelism": "120"
+    }
+  },
+  {
+    "Classification": "capacity-scheduler",
+    "Properties": {
+      "yarn.scheduler.capacity.resource-calculator": "org.apache.hadoop.yarn.util.resource.DominantResourceCalculator"
+    }
+  }
+]
